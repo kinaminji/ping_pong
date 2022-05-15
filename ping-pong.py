@@ -55,7 +55,7 @@ class Ball(GameSprite):
 
 window = display.set_mode((700, 500))
 display.set_caption('Ping-pong')
-background = transform.scale(image.load('C:\\Users\\Инесса\\Desktop\\пингпонг\\fon.jpg'),(700,500))
+background = transform.scale(image.load('fon.jpg'),(700,500))
 
 game = True
 final = False
@@ -68,9 +68,9 @@ font2 = font.SysFont('Arial',20)
 t_lose1 = font1.render('Первый игрок проиграл!',True, (180,0,0))
 t_lose2 = font1.render('Второй игрок проиграл!',True, (180,0,0))
 
-player1 = Player('C:\\Users\\Инесса\\Desktop\\пингпонг\\raketka.jpg', 5,10, 6, 10, 80)
-player2 = Player('C:\\Users\\Инесса\\Desktop\\пингпонг\\raketka.jpg', 680,10, 6, 10, 80)
-ball = Ball('C:\\Users\\Инесса\\Desktop\\пингпонг\\ball.jpg',randint(30,200),randint(0,450),6,17,17)
+player1 = Player('raketka.jpg', 5,10, 6, 10, 80)
+player2 = Player('raketka.jpg', 680,10, 6, 10, 80)
+ball = Ball('ball.jpg',randint(30,200),randint(0,450),6,17,17)
 
 while game:
     for i in event.get():
